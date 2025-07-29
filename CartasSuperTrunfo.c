@@ -8,6 +8,14 @@
 
 int main() {
     printf("Desafio Super Trunfo!\n");
+    char
+    char
+    char
+    int
+    int
+    float
+    float
+    
 
 
 
