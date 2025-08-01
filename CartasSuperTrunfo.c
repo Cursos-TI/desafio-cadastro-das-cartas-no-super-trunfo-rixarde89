@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-//Tema 2 Nivel novato
+//Tema 2 Nivel novato!
 
 int main() {
 //Abaixo serão declaradas as variaveis para as duas cartas.
