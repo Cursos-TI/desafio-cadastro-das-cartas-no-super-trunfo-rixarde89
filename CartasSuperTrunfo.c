@@ -9,7 +9,7 @@ int main() {
     char cod_carta_1[50], cod_carta_2[50]; 
     int populacao_1, populacao_2, pontosturisticos_1, pontosturisticos_2;
     float area_1, area_2, pib_1, pib_2;
-    float densidadepopulacional_2, pibpercapita_1, pibpercapita_2;
+    float  densidadepopulacional_1, densidadepopulacional_2, pibpercapita_1, pibpercapita_2;
 
 //Abaixo iniciaremos a coleta de dados para a carta 1.
 
@@ -50,6 +50,9 @@ int main() {
 
 //A informações logo abaixo é do recebimentos dos dados da carta 1.
 
+densidadepopulacional_1 = (float) populacao_1 / area_1;
+pibpercapita_1 = (float) (pib_1 * 1000000000) / populacao_1;
+
     printf("CARTA 1:\n");
     printf("Estado: %c\n", estado_1);
     printf("Código: %s\n", cod_carta_1);
@@ -58,8 +61,8 @@ int main() {
     printf("A área da cidade: %.2f Km²\n", area_1);
     printf("O PIB da cidade: %.2f Bilhões de reais\n", pib_1);
     printf("Número de pontos turísticos: %d\n", pontosturisticos_1);
-    printf("Densidade populacional: %.2f hab/km²\n", (float) populacao_1 / area_1);
-    printf("PIB per capita: %.2f Reais\n\n ", (pib_1 * 1000000000.0f) / populacao_1);
+    printf("Densidade populacional: %.2f hab/km²\n",  populacao_1, area_1);
+    printf("PIB per capita: %.2f Reais\n\n ", pib_1, populacao_1);
 
 //A informações logo abaixo é do recebimentos dos dados da carta 2.
 
@@ -79,4 +82,3 @@ int main() {
 
     return 0;
 
-}
