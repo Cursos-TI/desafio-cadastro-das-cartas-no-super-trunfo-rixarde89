@@ -2,6 +2,7 @@
 
 /* Criar um programa para calcular a media de três notas do aluno */
 /* pedir para digitar as 3 notas */
+/* Calcular média do aluno */
 /* Ao final exibir se o aluno foi reprovado ou aprovado */
 
 int main(){
