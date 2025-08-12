@@ -15,12 +15,12 @@ int main() {
 
     printf("*** DESAFIO SUPER TRUNFO DE PAÍSES! ***\n\n"); 
     printf("--- CADASTRO DA PRIMEIRA CARTA ---\n\n");
-    /*printf("Digite a letra do estado (apenas uma letra de A até H) :");
+    printf("Digite a letra do estado (apenas uma letra de A até H) :");
     scanf(" %c", &estado_1);
     printf("Digite a letra do estado com o número entre 01 a 04 para gerar o código (Ex:'A01') :");
     scanf("%s", cod_carta_1);
     printf("Digite o nome da cidade :");
-    scanf("%s", cidade_1);*/
+    scanf("%s", cidade_1);
     printf("Digite o número de habitantes :");
     scanf("%d", &populacao_1);
     printf("Digite a área territorial em quilometros quadrados :");
@@ -33,12 +33,12 @@ int main() {
 //Abaixo iniciaremos a coleta de dados para a carta 2.
     
     printf("--- CADASTRO DA SEGUNDA CARTA ---\n\n");
-    /*printf("Digite a letra do estado (apenas uma letra de A até H) :");
+    printf("Digite a letra do estado (apenas uma letra de A até H) :");
     scanf(" %c", &estado_2);
     printf("Digite a letra do estado com o número entre 01 a 04 para gerar o código (Ex:'A01') :");
     scanf("%s", cod_carta_2);
     printf("Digite o nome da cidade :");
-    scanf("%s", cidade_2);*/
+    scanf("%s", cidade_2);
     printf("Digite o número de habitantes :");
     scanf("%d", &populacao_2);
     printf("Digite a área territorial em quilometros quadrados :");
