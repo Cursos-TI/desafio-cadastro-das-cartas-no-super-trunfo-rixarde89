@@ -78,7 +78,7 @@ pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
     printf("O PIB da cidade: %.2f Bilhões de reais\n", pib_2);
     printf("Número de pontos turísticos: %d\n", pontosturisticos_2);
     printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacional_2);
-    printf("PIB per capita: %.2f Reais\n ", pibpercapita_2;
+    printf("PIB per capita: %.2f Reais\n ", pibpercapita_2);
 
    
     return 0;
