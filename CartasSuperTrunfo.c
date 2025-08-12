@@ -9,17 +9,18 @@ int main() {
     char cod_carta_1[50], cod_carta_2[50]; 
     int populacao_1, populacao_2, pontosturisticos_1, pontosturisticos_2;
     float area_1, area_2, pib_1, pib_2;
+    float densidade_populacional_2, pib_per_capita1, pib_per_capita2;
 
 //Abaixo iniciaremos a coleta de dados para a carta 1.
 
-    printf("--- DESAFIO SUPER TRUNFO DE PAÍSES! ---\n\n"); 
+    printf("*** DESAFIO SUPER TRUNFO DE PAÍSES! ***\n\n"); 
     printf("--- CADASTRO DA PRIMEIRA CARTA ---\n\n");
-    printf("Digite a letra do estado (apenas uma letra de A até H) :");
+    /*printf("Digite a letra do estado (apenas uma letra de A até H) :");
     scanf(" %c", &estado_1);
     printf("Digite a letra do estado com o número entre 01 a 04 para gerar o código (Ex:'A01') :");
     scanf("%s", cod_carta_1);
     printf("Digite o nome da cidade :");
-    scanf("%s", cidade_1);
+    scanf("%s", cidade_1);*/
     printf("Digite o número de habitantes :");
     scanf("%d", &populacao_1);
     printf("Digite a área territorial em quilometros quadrados :");
@@ -32,12 +33,12 @@ int main() {
 //Abaixo iniciaremos a coleta de dados para a carta 2.
     
     printf("--- CADASTRO DA SEGUNDA CARTA ---\n\n");
-    printf("Digite a letra do estado (apenas uma letra de A até H) :");
+    /*printf("Digite a letra do estado (apenas uma letra de A até H) :");
     scanf(" %c", &estado_2);
     printf("Digite a letra do estado com o número entre 01 a 04 para gerar o código (Ex:'A01') :");
     scanf("%s", cod_carta_2);
     printf("Digite o nome da cidade :");
-    scanf("%s", cidade_2);
+    scanf("%s", cidade_2);*/
     printf("Digite o número de habitantes :");
     scanf("%d", &populacao_2);
     printf("Digite a área territorial em quilometros quadrados :");
@@ -45,7 +46,7 @@ int main() {
     printf("Digite o PIB :");
     scanf("%f", &pib_2);
     printf("Digite a quantidade de pontos turísticos :");
-    scanf("%d", &pontosturisticos_2); 
+    scanf("%d", &pontosturisticos_2);
 
 //A informações logo abaixo é do recebimentos dos dados da carta 1.
 
@@ -56,7 +57,9 @@ int main() {
     printf("A população da cidade: %d\n", populacao_1);
     printf("A área da cidade: %.2f Km²\n", area_1);
     printf("O PIB da cidade: %.2f Bilhões de reais\n", pib_1);
-    printf("Número de pontos turísticos: %d\n\n", pontosturisticos_1);
+    printf("Número de pontos turísticos: %d\n", pontosturisticos_1);
+    printf("Densidade populacional: %.2f hab/km²\n", populacao_1 / area_1);
+    printf("PIB per capita: %.2f Reais\n\n ", pib_1 / populacao_1);
 
 //A informações logo abaixo é do recebimentos dos dados da carta 2.
 
@@ -68,8 +71,11 @@ int main() {
     printf("A área da cidade: %.2f Km²\n", area_2);
     printf("O PIB da cidade: %.2f Bilhões de reais\n", pib_2);
     printf("Número de pontos turísticos: %d\n", pontosturisticos_2);
+    printf("Densidade populacional: %.2f hab/km²\n", densidade_populacional_2);
+    printf("PIB per capita: %.2f Reais\n", pib_per_capita2);
 
-   
+    densidade_populacional_2 = (float) (populacao_2 / area_2);
+    pib_per_capita2 = (float) (pib_2 / populacao_2);
 
 
     return 0;
