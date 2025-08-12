@@ -28,7 +28,7 @@ int main(){
     /* Verificar se o aluno foi aprovado*/
 
     if (media >= 7) {
-        printf("\nAprovado");
+        printf("\nAprovado\n");
     } else {
         printf("\nReprovado\n");
     }
