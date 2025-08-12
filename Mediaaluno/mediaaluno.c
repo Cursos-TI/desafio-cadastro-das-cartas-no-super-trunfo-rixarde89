@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /* Criar um programa para calcular a media de três notas do aluno */
 /* pedir para digitar as 3 notas */
 /* Calcular média do aluno */
@@ -11,11 +10,11 @@ int main(){
     
     /* Solicitando as notas */
 
-    printf("Informe sua primeira notas: \n");
+    printf("Informe sua primeira nota: \n");
     scanf("%f", &nota1);
-    printf("Informe sua segunda notas: \n");
+    printf("Informe sua segunda nota: \n");
     scanf("%f", &nota2);
-    printf("Informe sua terceira notas: \n");
+    printf("Informe sua terceira nota: \n");
     scanf("%f", &nota3);
 
     /* Calculando a média */
