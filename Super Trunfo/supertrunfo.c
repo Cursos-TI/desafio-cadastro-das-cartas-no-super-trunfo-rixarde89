@@ -11,10 +11,9 @@ int main() {
     int pontosturisticos_1, pontosturisticos_2;
     float area_1, area_2, pib_1, pib_2;
     float densidadepopulacional_1, densidadepopulacional_2, pibpercapita_1, pibpercapita_2;
-    int resultadoA, resultadoB;
+    int resultado;
     float superpoder1, superpoder2;
-    char carta1[30] = "Carta 1", carta2[30] = "carta 2";
-
+   
     
 //Abaixo iniciaremos a coleta de dados para a carta 1.
 
@@ -91,18 +90,13 @@ superpoder2 = (float) populacao_2 + area_2 + pib_2 + pontosturisticos_2 + pibper
 
 // Comparação das cartas
     printf("--- Comparação das cartas ---\n");
-resultadoA = populacao_1 > populacao_2;
-resultadoB = populacao_2 > populacao_1;
-resultadoA = area_1 > area_2;
-resultadoB = area_2 > area_1;
+resultado = populacao_1 > populacao_2;
+
 
 
 // Resultado da comparação
     printf("--- Resultados Do Jogo ---\n\n");
-    printf("População: %s é %d\n", carta1, resultadoA);
-    printf("População: %s é %d\n", carta2, resultadoB);
-    printf("Área: %s é %d\n", carta1, resultadoA);
-    printf("Área: %s é %d\n", carta2, resultadoB);
+    printf("População: %d\n", resultado);
     
     
     return 0;
