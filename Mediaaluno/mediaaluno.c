@@ -17,15 +17,15 @@ int main(){
     printf("Informe sua terceira nota: \n");
     scanf("%f", &nota3);
 
-    /* Calculando a média */
+    // Calculando a média 
 
     media = (nota1 + nota2 + nota3) / 3;
 
-    /* Exibir a média */
+    //Exibir a média 
 
     printf("A média é: %.1f", media);
 
-    /* Verificar se o aluno foi aprovado*/
+    // Verificar se o aluno foi aprovado
 
     if (media >= 7) {
         printf("\nAprovado\n");
