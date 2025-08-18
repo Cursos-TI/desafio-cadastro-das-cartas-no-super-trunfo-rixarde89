@@ -1,15 +1,20 @@
 #include <stdio.h>
 
-//Tema 2 Nivel novato!
+//Tema 2 Nivel Mestre!
 
 int main() {
 //Abaixo serão declaradas as variaveis para as duas cartas.
 
     char estado_1, estado_2, cidade_1[50], cidade_2[50];
     char cod_carta_1[50], cod_carta_2[50]; 
-    int populacao_1, populacao_2, pontosturisticos_1, pontosturisticos_2;
+    unsigned long int populacao_1, populacao_2;
+    int pontosturisticos_1, pontosturisticos_2;
     float area_1, area_2, pib_1, pib_2;
     float densidadepopulacional_1, densidadepopulacional_2, pibpercapita_1, pibpercapita_2;
+    char carta1[30] = "Carta 1", carta2[30] = "carta 2";
+    int resultado1, resultado2;
+    float superpoder;
+    
 
 //Abaixo iniciaremos a coleta de dados para a carta 1.
 
@@ -57,7 +62,7 @@ pibpercapita_1 = (float) (pib_1 * 1000000000.0f) / populacao_1;
     printf("Estado: %c\n", estado_1);
     printf("Código: %s\n", cod_carta_1);
     printf("O nome da cidade: %s\n", cidade_1);
-    printf("A população da cidade: %d\n", populacao_1);
+    printf("A população da cidade: %lu\n", populacao_1);
     printf("A área da cidade: %.2f Km²\n", area_1);
     printf("O PIB da cidade: %.2f Bilhões de reais\n", pib_1);
     printf("Número de pontos turísticos: %d\n", pontosturisticos_1);
@@ -73,14 +78,20 @@ pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
     printf("Estado: %c\n", estado_2);
     printf("Código: %s\n", cod_carta_2);
     printf("O nome da cidade: %s\n", cidade_2);
-    printf("A população da cidade: %d\n", populacao_2);
+    printf("A população da cidade: %lu\n", populacao_2);
     printf("A área da cidade: %.2f Km²\n", area_2);
     printf("O PIB da cidade: %.2f Bilhões de reais\n", pib_2);
     printf("Número de pontos turísticos: %d\n", pontosturisticos_2);
     printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacional_2);
     printf("PIB per capita: %.2f Reais\n ", pibpercapita_2);
 
-   
+//Comparações das cartas do Jogo Super Trunfo!
+resultado1 = populacao_1 > populacao_2;
+resultado2 = populacao_2 > populacao_1;
+
+    printf("A %s a população é : %d\n", carta1, resultado1);
+    printf("A %s a população é : %d\n", carta2, resultado2);
+
     return 0;
 
 }
