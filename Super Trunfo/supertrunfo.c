@@ -52,11 +52,11 @@ int main() {
     printf("Digite a quantidade de pontos turísticos :");
     scanf("%d", &pontosturisticos_2);
 
-//A informações logo abaixo é do recebimentos dos dados da carta 1.
-
+// Calculos para saber a Densidade Populacional e Pib Per Capita da Carta 1
 densidadepopulacional_1 = (float) populacao_1 / area_1;
 pibpercapita_1 = (float) (pib_1 * 1000000000.0f) / populacao_1;
 
+//A informações logo abaixo é do recebimentos dos dados da carta 1.
     printf("\n---CARTA 1---\n");
     printf("Estado: %c\n", estado_1);
     printf("Código: %s\n", cod_carta_1);
@@ -68,11 +68,12 @@ pibpercapita_1 = (float) (pib_1 * 1000000000.0f) / populacao_1;
     printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacional_1);
     printf("PIB per capita: %.2f Reais\n\n ", pibpercapita_1);
 
-//A informações logo abaixo é do recebimentos dos dados da carta 2.
 
+// Calculos para saber a Densidade Populacional e Pib Per Capita da Carta 2
 densidadepopulacional_2 = (float) populacao_2 / area_2;
 pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
 
+//A informações logo abaixo é do recebimentos dos dados da carta 2.
     printf("---CARTA 2---\n");
     printf("Estado: %c\n", estado_2);
     printf("Código: %s\n", cod_carta_2);
@@ -84,16 +85,15 @@ pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
     printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacional_2);
     printf("PIB per capita: %.2f Reais\n ", pibpercapita_2);
 
-superpoder1 = populacao_1 + area_1 + pib_1 + pontosturisticos_1 + pibpercapita_1 + (1 / densidadepopulacional_1);
-superpoder2 = populacao_2 + area_2 + pib_2 + pontosturisticos_2 + pibpercapita_2 + (1 / densidadepopulacional_2);
+superpoder1 = (float) populacao_1 + area_1 + pib_1 + pontosturisticos_1 + pibpercapita_1 + (1 / densidadepopulacional_1);
+superpoder2 = (float) populacao_2 + area_2 + pib_2 + pontosturisticos_2 + pibpercapita_2 + (1 / densidadepopulacional_2);
 
 // Resultado da comparação
 
-    printf("A %d a população é : %d\n", carta1, resultado1);
-    printf("A %d a população é : %d\n", carta2, resultado2);
-    printf("A %d a área é : %d\n", carta1, resultado1);
-    printf("A %d a área é : %d\n", carta2, resultado2);
+    printf("--- Resultados Do Jogo ---\n\n");
+    printf("")
 
-    return 0;
+    
+        return 0;
 
 }
