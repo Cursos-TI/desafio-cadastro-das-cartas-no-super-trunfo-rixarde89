@@ -88,9 +88,13 @@ pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
 //Comparações das cartas do Jogo Super Trunfo!
 resultado1 = populacao_1 > populacao_2;
 resultado2 = populacao_2 > populacao_1;
+resultado1 = area_1 > area_2;
+resultado1 = area_2 > area_1;
 
-    printf("A %s a população é : %d\n", carta1, resultado1);
-    printf("A %s a população é : %d\n", carta2, resultado2);
+    printf("A %d a população é : %d\n", carta1, resultado1);
+    printf("A %d a população é : %d\n", carta2, resultado2);
+    printf("A %d a área é : %d\n", carta1, resultado1);
+    printf("A %d a área é : %d\n", carta2, resultado2);
 
     return 0;
 
