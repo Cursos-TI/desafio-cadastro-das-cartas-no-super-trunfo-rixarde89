@@ -89,21 +89,18 @@ pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
 superpoder1 = (float) populacao_1 + area_1 + pib_1 + pontosturisticos_1 + pibpercapita_1 + (1 / densidadepopulacional_1);
 superpoder2 = (float) populacao_2 + area_2 + pib_2 + pontosturisticos_2 + pibpercapita_2 + (1 / densidadepopulacional_2);
 
-// Comparação das cartas
-    printf("--- Comparação das cartas ---\n");
-resultado = populacao_1 > populacao_2;
-resultado = area_1 > area_2;
-resultado = pib_1 > pib_2;
-resultado = pontosturisticos_1 > pontosturisticos_2;
-resultado = densidadepopulacional_1 < densidadepopulacional_2;
-resultado = pibpercapita_1 > pibpercapita_2;
-resultado = superpoder1 > superpoder2;
-
 // Resultado da comparação
-    printf("--- Resultados Do Jogo ---\n\n");
-    printf("");
+    printf("--- Resultados Do Jogo ---\n");
+    printf("'1' Carta 1 vence, 0 Carta '2' vence\n");
+    printf("População: %d\n", populacao_1 > populacao_2);
+    printf("Área: %d\n", area_1 > area_2);
+    printf("PIB: %d\n", pib_1 > pib_2);
+    printf("Pontos Turísticos: %d\n", pontosturisticos_1 > pontosturisticos_2);
+    printf("Densidade Populacional (vence o menor): %d\n", densidadepopulacional_1 < densidadepopulacional_2);
+    printf("PIB per Capita: %d\n", pibpercapita_1 > pibpercapita_2);
+    printf("Super Poder (Vence a carta de maior valor): %d\n", superpoder1 > superpoder2);
 
-    
+
     return 0;
 
 }
