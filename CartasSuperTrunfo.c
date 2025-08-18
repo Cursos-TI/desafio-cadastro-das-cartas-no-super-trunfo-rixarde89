@@ -13,7 +13,7 @@ int main() {
     float densidadepopulacional_1, densidadepopulacional_2, pibpercapita_1, pibpercapita_2;
     char carta1[30] = "Carta 1", carta2[30] = "carta 2";
     int resultado1, resultado2;
-    float superpoder;
+    float superpoder1, superpoder2;
     
 
 //Abaixo iniciaremos a coleta de dados para a carta 1.
@@ -58,7 +58,7 @@ int main() {
 densidadepopulacional_1 = (float) populacao_1 / area_1;
 pibpercapita_1 = (float) (pib_1 * 1000000000.0f) / populacao_1;
 
-    printf("CARTA 1:\n");
+    printf("\n---CARTA 1---\n");
     printf("Estado: %c\n", estado_1);
     printf("Código: %s\n", cod_carta_1);
     printf("O nome da cidade: %s\n", cidade_1);
@@ -74,7 +74,7 @@ pibpercapita_1 = (float) (pib_1 * 1000000000.0f) / populacao_1;
 densidadepopulacional_2 = (float) populacao_2 / area_2;
 pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
 
-    printf("CARTA 2:\n");
+    printf("---CARTA 2---\n");
     printf("Estado: %c\n", estado_2);
     printf("Código: %s\n", cod_carta_2);
     printf("O nome da cidade: %s\n", cidade_2);
@@ -85,11 +85,16 @@ pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
     printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacional_2);
     printf("PIB per capita: %.2f Reais\n ", pibpercapita_2);
 
+superpoder1 = populacao_1 + area_1 + pib_1 + pontosturisticos_1 + pibpercapita_1;
+
 //Comparações das cartas do Jogo Super Trunfo!
+
 resultado1 = populacao_1 > populacao_2;
 resultado2 = populacao_2 > populacao_1;
 resultado1 = area_1 > area_2;
 resultado1 = area_2 > area_1;
+
+// Resultado da comparação
 
     printf("A %d a população é : %d\n", carta1, resultado1);
     printf("A %d a população é : %d\n", carta2, resultado2);
