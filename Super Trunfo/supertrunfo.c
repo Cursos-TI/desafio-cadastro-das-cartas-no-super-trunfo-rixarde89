@@ -121,5 +121,3 @@ resultadocarta2 = superpoder_2 > superpoder_1;*/
     printf("Super Poder: (%d)\n\n", resultadosuperpoder);
 
     return 0;
-
-}
