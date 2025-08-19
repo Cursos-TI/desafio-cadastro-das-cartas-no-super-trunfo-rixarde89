@@ -25,7 +25,7 @@ int main() {
     printf("Digite a letra do estado com o número entre 01 a 04 para gerar o código (Ex:'A01') :");
     scanf("%s", cod_carta_1);
     printf("Digite o nome da cidade :");
-    scanf("%s", cidade_1);*/
+    scanf("%s", cidade_1);
     printf("Digite o número de habitantes :");
     scanf("%lu", &populacao_1);
     printf("Digite a área territorial em quilometros quadrados :");
@@ -43,7 +43,7 @@ int main() {
     printf("Digite a letra do estado com o número entre 01 a 04 para gerar o código (Ex:'A01') :");
     scanf("%s", cod_carta_2);
     printf("Digite o nome da cidade :");
-    scanf("%s", cidade_2);*/
+    scanf("%s", cidade_2);
     printf("Digite o número de habitantes :");
     scanf("%lu", &populacao_2);
     printf("Digite a área territorial em quilometros quadrados :");
@@ -61,7 +61,7 @@ pibpercapita_1 = (float) (pib_1 * 1000000000.0f) / populacao_1;
     printf("\n---CARTA 1---\n");
     printf("Estado: %c\n", estado_1);
     printf("Código: %s\n", cod_carta_1);
-    printf("O nome da cidade: %s\n", cidade_1);*/
+    printf("O nome da cidade: %s\n", cidade_1);
     printf("A população da cidade: %lu\n", populacao_1);
     printf("A área da cidade: %.2f Km²\n", area_1);
     printf("O PIB da cidade: %.2f Bilhões de reais\n", pib_1);
@@ -78,7 +78,7 @@ pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
     printf("---CARTA 2---\n");
     printf("Estado: %c\n", estado_2);
     printf("Código: %s\n", cod_carta_2);
-    printf("O nome da cidade: %s\n", cidade_2);*/
+    printf("O nome da cidade: %s\n", cidade_2);
     printf("A população da cidade: %lu\n", populacao_2);
     printf("A área da cidade: %.2f Km²\n", area_2);
     printf("O PIB da cidade: %.2f Bilhões de reais\n", pib_2);
