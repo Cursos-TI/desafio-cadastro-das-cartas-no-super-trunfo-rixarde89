@@ -96,7 +96,7 @@ superpoder2 = (float) populacao_2 + area_2 + pib_2 + pontosturisticos_2 + pibper
     printf("Área: %d\n", area_1 > area_2);
     printf("PIB: %d\n", pib_1 > pib_2);
     printf("Pontos Turísticos: %d\n", pontosturisticos_1 > pontosturisticos_2);
-    printf("Densidade Populacional (vence o menor): %d\n", densidadepopulacional_1 < densidadepopulacional_2);
+    printf("Densidade Populacional (vence o menor valor): %d\n", densidadepopulacional_1 < densidadepopulacional_2);
     printf("PIB per Capita: %d\n", pibpercapita_1 > pibpercapita_2);
     printf("Super Poder (Vence a carta de maior valor): %d\n", superpoder1 > superpoder2);
 
