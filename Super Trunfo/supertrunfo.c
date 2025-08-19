@@ -16,7 +16,6 @@ int main() {
    
 //Abaixo iniciaremos a coleta de dados para a carta 1.
     printf("*** DESAFIO SUPER TRUNFO DE PAÍSES! ***\n\n");
-   
     printf("--- CADASTRO DA PRIMEIRA CARTA ---\n\n");
     printf("Digite a letra do estado (apenas uma letra de A até H) :");
     scanf(" %c", &estado_1);
@@ -51,11 +50,11 @@ int main() {
     printf("Digite a quantidade de pontos turísticos :");
     scanf("%d", &pontosturisticos_2);
 
-// Calculos para saber a Densidade Populacional e Pib Per Capita da Carta 1
+// Calculando a Densidade Populacional e Pib Per Capita da Carta 1
 densidadepopulacional_1 = (float) populacao_1 / area_1;
 pibpercapita_1 = (float) (pib_1 * 1000000000.0f) / populacao_1;
 
-//A informações logo abaixo é do recebimentos dos dados da carta 1.
+// A informações logo abaixo é do recebimentos dos dados da carta 1.
     printf("\n---CARTA 1---\n");
     printf("Estado: %c\n", estado_1);
     printf("Código: %s\n", cod_carta_1);
@@ -68,11 +67,11 @@ pibpercapita_1 = (float) (pib_1 * 1000000000.0f) / populacao_1;
     printf("PIB per capita: %.2f Reais\n\n ", pibpercapita_1);
 
 
-// Calculos para saber a Densidade Populacional e Pib Per Capita da Carta 2
+// Calculando Densidade Populacional e Pib Per Capita da Carta 2
 densidadepopulacional_2 = (float) populacao_2 / area_2;
 pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
 
-//A informações logo abaixo é do recebimentos dos dados da carta 2.
+// A informações logo abaixo é do recebimentos dos dados da carta 2.
     printf("---CARTA 2---\n");
     printf("Estado: %c\n", estado_2);
     printf("Código: %s\n", cod_carta_2);
@@ -84,8 +83,7 @@ pibpercapita_2 = (float) (pib_2 * 1000000000.0f) / populacao_2;
     printf("Densidade populacional: %.2f hab/km²\n", densidadepopulacional_2);
     printf("PIB per capita: %.2f Reais\n\n ", pibpercapita_2);
 
-/*Calcular o Super Poder:Para cada carta, calcule o "Super Poder"
-  somando todos os atributos numéricos população, área, PIB, 
+/* Calculando o "Super Poder", somando todos os atributos numéricos:população, área, PIB, 
   número de pontos turísticos, PIB per capita e o inverso da densidade 
   populacional – quanto menor a densidade, maior o poder:*/
 
@@ -93,7 +91,7 @@ superpoder_1 = (float) populacao_1 + area_1 + pib_1 + pontosturisticos_1 + pibpe
 superpoder_2 = (float) populacao_2 + area_2 + pib_2 + pontosturisticos_2 + pibpercapita_2 + (1 / densidadepopulacional_2);
 
 
-//Comparação das Cartas 
+// Comparação das Cartas 
 resultado_pop = populacao_1 > populacao_2;
 resultado_area = area_1 > area_2;
 resultado_pib = pib_1 > pib_2;
@@ -110,8 +108,8 @@ resultadocarta2 = densidadepopulacional_2 < densidadepopulacional_1; // Vence o 
 resultadocarta2 = pibpercapita_2 > pibpercapita_1;
 resultadocarta2 = superpoder_2 > superpoder_1;*/
 
-// Resultado da comparação
-    printf("--- Resultados Do Jogo ---\n\n");
+// Resultado da comparação de cada atributo.
+    printf("--- RESULTADO DA COMPARAÇÃO ---\n\n");
     printf("População:(%d)\n", resultado_pop);
     printf("Área: (%d)\n", resultado_area);
     printf("PIB: (%d)\n", resultado_pib);
@@ -119,6 +117,7 @@ resultadocarta2 = superpoder_2 > superpoder_1;*/
     printf("Densidade Populacional: (%d)\n", resultado_dp);
     printf("PIB per Capita:(%d)\n", resultado_pibpc);
     printf("Super Poder: (%d)\n\n", resultadosuperpoder);
+    
 
     return 0;
 }
