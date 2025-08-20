@@ -100,14 +100,6 @@ resultado_dp = densidadepopulacional_1 < densidadepopulacional_2; // Vence o men
 resultado_pibpc = pibpercapita_1 > pibpercapita_2;
 resultadosuperpoder = superpoder_1 > superpoder_2;
 
-/*resultadocarta2 = populacao_2 > populacao_1;
-resultadocarta2 = area_2 > area_1;
-resultadocarta2 = pib_2 > pib_1;
-resultadocarta2 = pontosturisticos_2 > pontosturisticos_1;
-resultadocarta2 = densidadepopulacional_2 < densidadepopulacional_1; // Vence o menor valor.
-resultadocarta2 = pibpercapita_2 > pibpercapita_1;
-resultadocarta2 = superpoder_2 > superpoder_1;*/
-
 // Resultado da comparação de cada atributo.
     printf("--- RESULTADO DA COMPARAÇÃO ---\n\n");
     printf("População:(%d)\n", resultado_pop);
@@ -118,7 +110,6 @@ resultadocarta2 = superpoder_2 > superpoder_1;*/
     printf("PIB per Capita:(%d)\n", resultado_pibpc);
     printf("Super Poder: (%d)\n\n", resultadosuperpoder);
     
-
     return 0;
 }
 
